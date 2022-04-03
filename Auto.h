@@ -10,65 +10,21 @@ private:
 
 public:
 
-	Auto(string brand, string model, double price, double speed, string color) {
-		this->brand = brand;
-		this->model = model;
-		this->price = price;
-		this->speed = speed;
-		this->color = color;
-	}
-	Auto() {
-		this->brand = "no name";
-		this->model = "no name";
-		this->price = 0;
-		this->speed = 0;
-		this->color = "white";
-	}
+	Auto(string brand, string model, double price, double speed, string color);
+	Auto();
 
-	string getBrand() {
-		return brand;
-	}
-	void setBrand(string brand) {
-		this->brand = brand;
-	}
-	string getModel() {
-		return model;
-	}
-	void setModel() {
-		this->model = model;
-	}
-	double getPrice() {
-		return price;
-	}
-	void setPrice(double price) {
-		if (price > 0) {
-			this->price = price;
-		}
-	}
-	double getSpeed() {
-		return speed;
-	}
-	void setSpeed(double speed) {
-		if (speed > 0) {
-			this->speed = speed;
-		}
-	}
-	string getColor() {
-		return color;
-	}
-	void setColor() {
-		this->color = color;
-	}
+	string getBrand();
+	void setBrand(string brand);
+	string getModel();
+	void setModel();
+	double getPrice();
+	void setPrice(double price);
+	double getSpeed();
+	void setSpeed(double speed);
+	string getColor();
+	void setColor();
 
-	~Auto() {
-		cout << "Destructor" << endl;
-	}
+	~Auto();
 
-	string getInfo() {
-		return "Auto:\nbrand = " + brand
-			+ ";\nmodel = " + model
-			+ ";\nprice = " + to_string(price)
-			+ ";\nspeed = " + to_string(speed)
-			+ ";\ncolor = " + color;
-	}
+	string getInfo();
 };
