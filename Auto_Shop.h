@@ -2,15 +2,18 @@
 
 class Auto_Shop
 {
+	string name;
 	string adress;
 	int floors;
 	int entrances;
 	int flats;
 
 public:
-	Auto_Shop(string adress, int floors, int entrances, int flats);
-	Auto_Shop() {}
+	Auto_Shop(string name, string adress, int floors, int entrances, int flats);
+	Auto_Shop();
 
+	string getName();
+	void senName(string name);
 	string getAdress();
 	void senAdress(string adress);
 	int getFloors();
