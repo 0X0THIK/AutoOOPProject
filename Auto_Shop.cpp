@@ -45,9 +45,7 @@ int Auto_Shop::getFlats() {
 void Auto_Shop::senFlats(int flats) {
 	this->flats = flats;
 }
-Auto_Shop::~Auto_Shop() {
-	cout << "Destructor" << endl;
-}
+Auto_Shop::~Auto_Shop() {}
 string Auto_Shop::getInfo() {
 	return "Auto_Shop:\nName = " + name
 		+ ";\nAdress = " + adress
