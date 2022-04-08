@@ -142,10 +142,12 @@
     <ClInclude Include="Auto.h" />
     <ClInclude Include="Auto_Shop.h" />
     <ClInclude Include="Header.h" />
+    <ClInclude Include="Manager.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Auto.cpp" />
     <ClCompile Include="Auto_Shop.cpp" />
+    <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
