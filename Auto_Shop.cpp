@@ -1,16 +1,18 @@
 #include "Auto_Shop.h"
 
-Auto_Shop::Auto_Shop(string name, string adress, int employees, int cars) {
+Auto_Shop::Auto_Shop(string name, string adress, int employees, int size, Auto* list) {
 	this->name = name;
 	this->adress = adress;
 	this->employees = employees;
-	this->cars = cars;
+	this->size = size;
+	this->list = list;
 }
 Auto_Shop::Auto_Shop() {
 	this->name = "no name";
 	this->adress = "no name";
 	this->employees = 0;
-	this->cars = 0;
+	this->size = 0;
+	list = NULL;
 }
 
 string Auto_Shop::getName() {
@@ -31,11 +33,11 @@ int Auto_Shop::getEmployees() {
 void Auto_Shop::senEmployees(int floors) {
 	this->employees = employees;
 }
-int Auto_Shop::getCars() {
-	return cars;
+int Auto_Shop::getSizeCars() {
+	return size;
 }
-void Auto_Shop::senCars(int cars) {
-	this->cars = cars;
+void Auto_Shop::senSizeCars(int size) {
+	this->size = size;
 }
 Auto_Shop::~Auto_Shop() {}
 string Auto_Shop::getInfo() {
