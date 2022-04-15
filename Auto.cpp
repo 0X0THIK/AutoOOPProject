@@ -1,6 +1,9 @@
 #include "Auto.h"
 
+int Auto::numberOfCars = 0;
+
 Auto::Auto(string brand, string model, double price, double speed, string color) {
+	numberOfCars++;
 	this->brand = brand;
 	this->model = model;
 	this->price = price;
@@ -8,11 +11,16 @@ Auto::Auto(string brand, string model, double price, double speed, string color)
 	this->color = color;
 }
 Auto::Auto() {
+	numberOfCars++;
 	this->brand = "no name";
 	this->model = "no name";
 	this->price = 0;
 	this->speed = 0;
 	this->color = "white";
+}
+
+int Auto::getNumberOfCars() {
+	return numberOfCars;
 }
 
 string Auto::getBrand() {
@@ -50,6 +58,7 @@ void Auto::setColor() {
 	this->color = color;
 }
 Auto::~Auto() {
+	numberOfCars--;
 	cout << "Destructor" << endl;
 }
 string Auto::getInfo() {

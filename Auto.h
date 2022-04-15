@@ -2,6 +2,9 @@
 
 class Auto {
 private:
+
+	static int numberOfCars;
+
 	string brand;
 	string model;
 	double price;
@@ -12,6 +15,9 @@ public:
 
 	Auto(string brand, string model, double price, double speed, string color);
 	Auto();
+	~Auto();
+
+	static int getNumberOfCars();
 
 	string getBrand();
 	void setBrand(string brand);
@@ -23,8 +29,6 @@ public:
 	void setSpeed(double speed);
 	string getColor();
 	void setColor();
-
-	~Auto();
 
 	string getInfo();
 };

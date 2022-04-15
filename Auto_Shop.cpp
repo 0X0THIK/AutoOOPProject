@@ -39,10 +39,16 @@ int Auto_Shop::getSizeCars() {
 void Auto_Shop::senSizeCars(int size) {
 	this->size = size;
 }
-Auto_Shop::~Auto_Shop() {}
+Auto_Shop::~Auto_Shop() {
+	if (list != NULL)
+	{
+		delete[] list;
+	}
+}
+
 string Auto_Shop::getInfo() {
 	return "Auto_Shop:\nName of shop = " + name
 		+ ";\nAdress = " + adress
 		+ ";\nThe number of Employees = " + to_string(employees)
-		+ ";\nThe number of Cars= " + to_string(cars);
+		+ ";\nThe number of Cars= " + to_string(size);
 }
