@@ -7,7 +7,5 @@ private:
 public:
 	Manager();
 	Manager(string name);
-
-
-
+	double calculateAvgPrice(AutoShop AutoShop);
 };

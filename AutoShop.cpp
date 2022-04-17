@@ -50,10 +50,10 @@ Auto AutoShop::get(int index) {
 	}
 }
 
-void AutoShop::set(int index, Auto auto) {
+void AutoShop::set(int index, Auto avto) {
 	if (list != NULL && index >= 0 && index < size)
 	{
-		list[index] = auto;
+		list[index] = avto;
 	}
 }
 

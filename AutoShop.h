@@ -3,6 +3,9 @@
 
 class AutoShop
 {
+	friend class Manager;
+
+private:
 	string name;
 	string adress;
 	int employees;
@@ -22,7 +25,7 @@ public:
 	int getSizeCars();
 	void senSizeCars(int cars);
 	Auto get(int index);
-	void set(int index, Auto auto);
+	void set(int index, Auto avto);
 
 	~AutoShop();
 	
