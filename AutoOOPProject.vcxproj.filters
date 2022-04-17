@@ -21,7 +21,7 @@
     <ClInclude Include="Header.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Auto_Shop.h">
+    <ClInclude Include="AutoShop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Manager.h">
@@ -35,7 +35,7 @@
     <ClCompile Include="Auto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Auto_Shop.cpp">
+    <ClCompile Include="AutoShop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Manager.cpp">

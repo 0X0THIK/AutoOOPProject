@@ -1,7 +1,7 @@
 #include "Header.h"
 #include "Auto.h"
 
-class Auto_Shop
+class AutoShop
 {
 	string name;
 	string adress;
@@ -10,8 +10,8 @@ class Auto_Shop
 	Auto* list;
 
 public:
-	Auto_Shop(string name, string adress, int employees, int size, Auto* list);
-	Auto_Shop();
+	AutoShop(string name, string adress, int employees, int size, Auto* list);
+	AutoShop();
 
 	string getName();
 	void senName(string name);
@@ -21,8 +21,10 @@ public:
 	void senEmployees(int employees);
 	int getSizeCars();
 	void senSizeCars(int cars);
+	Auto get(int index);
+	void set(int index, Auto auto);
 
-	~Auto_Shop();
+	~AutoShop();
 	
 	string getInfo();
 };
