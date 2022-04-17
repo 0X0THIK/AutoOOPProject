@@ -1,4 +1,7 @@
 class Zoo;
+class Shop;
+class Animal;
+
 class Animal {
 	friend class Zoo;
 	friend class Shop;
@@ -7,6 +10,7 @@ private:
 };
 
 class Zoo {
+	friend class Shop;
 public:
 	void add(Animal animal);
 };
