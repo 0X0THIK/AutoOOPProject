@@ -1,6 +1,7 @@
 #include "Header.h"
 
 class Auto {
+	friend void changeMark(Auto& avto);
 private:
 
 	static int numberOfCars;
