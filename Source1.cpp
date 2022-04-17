@@ -1,16 +1,16 @@
 class Zoo;
 class Animal {
-	friend void Zoo::add(Animal& animal);
-	friend void Shop::add(Animal& animal);
+	friend class Zoo;
+	friend class Shop;
 private:
 	double power;
 };
 
 class Zoo {
 public:
-	void add(Animal& animal);
+	void add(Animal animal);
 };
-void Zoo::add(Animal& animal) {
+void Zoo::add(Animal animal) {
 	double pow = animal.power;
 }
 
@@ -19,5 +19,4 @@ public:
 	void add(Animal animal) {
 		double pow = animal.power;
 	}
-
 };
