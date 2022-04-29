@@ -143,12 +143,14 @@
     <ClInclude Include="AutoShop.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Manager.h" />
+    <ClInclude Include="SuperCar.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Auto.cpp" />
     <ClCompile Include="AutoShop.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="SuperCar.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
