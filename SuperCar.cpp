@@ -1,6 +1,6 @@
 #include "SuperCar.h"
 
-//int SuperCar::numberOfCars = 0;
+int SuperCar::numberOfCars = 0;
 
 SuperCar::SuperCar(string brand, string model, double price, double speed, string color) {
 	
