@@ -5,7 +5,11 @@ class SuperCar : public Auto
 {
 	
 private:
-
+	string brand;
+	string model;
+	double price;
+	double speed;
+	string color;
 	
 
 public:
